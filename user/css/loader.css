@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensure the body height matches the viewport */
+  margin: 0;
+  /* background-image: url('user/image/v960-ning-03.jpg'); */
+  /* background-image: url('user/image/background.avif'); */
+  background-color: #e8e8e8;
+}
+.text {
+  font-weight: bolder;
+  font-size: 17px;
+  color: black;
+  position: absolute;
+  translate: -50% 0px;
+  top: 20px;
+  left: 50%;
+  text-align: center;
+}
+
+.loader {
+  overflow: visible;
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 50%;
+  background-image: url("user/image/v960-ning-03.jpg");
+  background-size: cover; /* Adjusts the image to cover the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  overflow: hidden;
+}
+
+.logo {
+  fill: none;
+  stroke-dasharray: 20px;
+  stroke: black;
+  animation: load 30s infinite linear; /* Increased duration to 30s */
+}
+
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0px;
+  }
+
+  100% {
+    stroke-dashoffset: 350px; /* Adjust based on stroke-dasharray */
+  }
+}

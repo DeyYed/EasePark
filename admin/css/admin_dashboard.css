@@ -1,0 +1,1372 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  /* background-color: rgb(248, 249, 250); */
+  /* background-color: rgb(244, 253, 255); */
+  /* background-color: rgb(255,255,255); */
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 75px;
+  overflow: hidden;
+  margin: 10px;
+}
+.cyberpark-logo {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name-edit-container {
+  height: 75px;
+  display: flex;
+  flex: 0.99;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  padding: 0 15px; /* Add horizontal padding */
+  margin: 10px 0;
+}
+
+.website-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  padding: 5px; /* Add some padding */
+}
+.logout-container button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.logout-container form {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Remove default margin from form */
+  background-color: transparent;
+}
+
+.logout-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.logout-container input[type="submit"],
+.button-logout {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px; /* Set font size */
+  color: red;
+  border: none;
+  border-radius: 4px; /* Optional: rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  background-color: transparent;
+}
+
+.left-dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 100px;
+  height: 82%;
+  /* background-color: rgb(248, 249, 250); */
+  /* background-color: rgb(244, 253, 255); */
+  background-color: white;
+  width: 200px;
+}
+.son-left-dashboard {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.icon1 {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.son-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  width: 150px;
+  overflow: hidden; /* Ensure overflow is hidden to prevent background overflow */
+  position: relative; /* Add relative positioning */
+  color: black;
+  text-decoration: none;
+  transition: 0.15s;
+}
+.son-dashboard:hover {
+  color: white;
+  background-color: black;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+  border: none;
+  height: 40px;
+  width: 150px;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  padding: 12px 10px;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  color: white;
+  top: 1;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background-color: rgb(200, 219, 243);
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+.cta:active {
+  color: white;
+  transform: scale(0.95);
+}
+.son-profile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.son-profile p{
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0; text-align: center;
+}
+.edit-button{
+  margin-top: -20px;
+  background-color: transparent;
+  display: inline-block; 
+  border: none; 
+  color: black; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.profile-icon {
+  height: 95px;
+  width: 54px;
+  margin: 0;
+  padding: 0;
+}
+
+/** Middle **/
+.middle {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  height: 82%;
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 200px;
+  /* background-color: rgb(248, 249, 250); */
+  background-color: rgb(244, 253, 255);
+  /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.3); */
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+}
+
+.middle-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 90%;
+  margin: 20px;
+}
+.left-one {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
+  /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.45); */
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+}
+.left-one-title {
+  width: 200px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.left-one-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 94%;
+  height: 220px;
+  margin: 20px;
+}
+.total-parking-slots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 220px;
+  border: rgb(196, 196, 196) 3px solid;
+  border-radius: 10px;
+}
+.total-p-slots {
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+.inner-parking-slots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 70%;
+  width: 180px;
+}
+.inner-count-slots {
+  font-size: 30px;
+  font-weight: bold;
+}
+.inner-parking-logo {
+  margin-bottom: 20px;
+}
+
+.available-slots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 220px;
+  border: rgb(8, 31, 92) 3px solid;
+  border-radius: 10px;
+}
+
+.occupied-slots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 220px;
+  border: red 3px solid;
+  border-radius: 10px;
+}
+
+/* mother div */
+.left-two {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: white;
+  /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.45); */
+  flex: 1;
+  overflow: auto;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+}
+.table {
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.recently-data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.title-recently-table {
+  margin: 20px 0 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.recently-table-container {
+  width: 100%;
+  height: 89%;
+}
+.mother-data {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.mother1-data {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.data-row {
+  display: flex;
+  width: 300px;
+}
+.data-raw {
+  display: flex;
+  width: 300px;
+}
+.padded-cell {
+  padding: 10px;
+}
+.table-row {
+  background-color: rgb(244, 253, 255);
+}
+.table-header {
+  padding: 10px;
+  border-bottom: 2px solid black;
+  text-align: center; /* Center align header text */
+}
+
+/* Align text in cells */
+.recently-data-table th,
+.recently-data-table td {
+  text-align: center; /* Center align cell content */
+  vertical-align: middle; /* Align content vertically in the middle */
+  padding: 10px; /* Adjust padding as necessary */
+}
+
+@media (max-width: 1770px) {
+  .middle-left {
+    width: 45%;
+  }
+}
+@media (max-width: 1288px) {
+  .occupied-slots {
+    display: none;
+  }
+}
+@media (max-width: 879px) {
+  .available-slots {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .available-slots {
+    display: none;
+  }
+}
+
+@media (max-width: 1173px) {
+  .occupied-slots {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .available-slots {
+    display: none;
+  }
+}
+@media (max-width: 508px) {
+  .available-slots {
+    display: none;
+  }
+}
+
+/* .left-three{
+  flex: 1;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  width: 50%;
+} */
+
+/** Middle right **/
+.middle-right {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 35%;
+  height: 90%;
+}
+@media (max-width: 1770px) {
+  .middle-right {
+    width: 38%;
+  }
+}
+
+.left-four {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.45); */
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  justify-content: center;
+  border-radius: 10px;
+}
+.calendar-container {
+  display: flex;
+  margin: auto; /* Center the container */
+  width: 100%; /* Adjust width as needed */
+  justify-content: center;
+  align-items: center;
+}
+.spacing {
+  font-size: 30px;
+  margin-left: 40px;
+}
+.month-year {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30px; /* Adjust font size as needed */
+  font-weight: bold; /* Bold font for emphasis */
+  margin-bottom: 10px; /* Space between month/year and calendar */
+}
+.month-year {
+  margin: 20px 40px 0px 0px;
+}
+
+.calendar-table {
+  width: 85%;
+  border-collapse: collapse; /* Borders collapse into a single border between cells */
+  table-layout: fixed;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 20px; /* Adjust cell padding */
+  font-size: 20px;
+}
+
+.calendar-table .highlight {
+  background-color: black; /* Example highlight color for current date */
+  color: white;
+  border-radius: 10%;
+  height: 10px;
+  width: 10px;
+}
+@media (max-width: 1500px) {
+  .month-year-margin {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1290px) {
+  .calendar-table th,
+  .calendar-table td {
+    padding: 15px; /* Adjust cell padding */
+    font-size: 15px;
+  }
+}
+.left-five {
+  background-color: white;
+  flex: 1;
+  /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.45); */
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+}
+.data-exit {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(245, 81, 80);
+  align-items: center;
+  justify-content: center;
+}
+.data-entry {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(51, 173, 51);
+  align-items: center;
+  justify-content: center;
+}
+.vertical-line {
+  border-left: 2px solid rgb(121, 119, 119); /* Thickness and color of the line */
+  height: 60px; /* Height of the line */
+  margin: 0 20px; /* Spacing around the line */
+  display: inline-block;
+}
+.data-uid-datetime {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  line-height: 30px;
+}
+.data-uid {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(121, 119, 119);
+}
+.data-datetime {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+.route-exit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  color: red;
+}
+.route-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  color: green;
+}
+
+.left-six {
+  background-color: white;
+  height: 277px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #ffffff 0%, #000000 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovering over the thumb */
+}
+.bottom {
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 13, 24);
+}
+/*Laptop */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .left-four {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    height: 250px;
+    margin-bottom: 20px;
+    /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.45); */
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .calendar-container {
+    display: flex;
+    margin: auto; /* Center the container */
+    width: 100%; /* Adjust width as needed */
+    justify-content: center;
+    align-items: center;
+  }
+  .spacing {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+  .month-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-bottom: 10px; /* Space between month/year and calendar */
+  }
+  .month-year {
+    margin: 20px 40px 0px 0px;
+  }
+
+  .calendar-table {
+    width: 85%;
+    border-collapse: collapse; /* Borders collapse into a single border between cells */
+    table-layout: fixed;
+  }
+
+  .calendar-table th,
+  .calendar-table td {
+    padding: 20px; /* Adjust cell padding */
+    font-size: 20px;
+  }
+
+  .calendar-table .highlight {
+    background-color: black; /* Example highlight color for current date */
+    color: white;
+    border-radius: 10%;
+    height: 10px;
+    width: 10px;
+  }
+  .left-five {
+    background-color: white;
+    flex: 1;
+    width: 90%;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  }
+  .data-exit {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(245, 81, 80);
+    align-items: center;
+    justify-content: center;
+  }
+  .data-entry {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(51, 173, 51);
+    align-items: center;
+    justify-content: center;
+  }
+  .vertical-line {
+    border-left: 2px solid rgb(121, 119, 119); /* Thickness and color of the line */
+    height: 60px; /* Height of the line */
+    margin: 0 20px; /* Spacing around the line */
+    display: inline-block;
+  }
+  .data-uid-datetime {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    line-height: 30px;
+  }
+  .data-uid {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(121, 119, 119);
+  }
+  .data-datetime {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+  }
+  .route-exit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    color: red;
+  }
+  .route-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    color: green;
+  }
+
+  .left-six {
+    background-color: white;
+    height: 277px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+  }
+  .bottom {
+    position: fixed;
+    height: 69px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 13, 24);
+  }
+}
+
+@media (min-height: 754px) and (max-height: 855px) {
+  .bottom {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 13, 24);
+  }
+}
+/* mobile */
+@media (min-width: 320px) and (max-width: 768px) {
+  html,
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  .header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    width: 100%;
+    /* background-color: rgb(248, 249, 250); */
+    /* background-color: rgb(244, 253, 255); */
+    /* background-color: rgb(255,255,255); */
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+  }
+  .cyberpark-logo {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .name-edit-container {
+    height: 100%;
+    display: flex;
+    flex: none;
+    align-items: center; /* Center items vertically */
+    padding: 0;
+    margin: 0px 0px 0px -10px;
+    justify-content: space-between;
+  }
+
+  .website-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .website-name p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .logout-container {
+    display: flex;
+    align-items: center;
+    padding: 5px; /* Add some padding */
+  }
+  .logout-container button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .logout-container form {
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove default margin from form */
+    background-color: transparent;
+  }
+
+  .logout-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  .logout-container input[type="submit"] .button-logout {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px; /* Set font size */
+    color: red;
+    border: none;
+    border-radius: 4px; /* Optional: rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    background-color: transparent;
+  }
+
+  .left-dashboard {
+    position: fixed;
+    height: 53px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+  }
+  .month-year-margin{
+    margin-right: 20px;
+  }
+  .son-left-dashboard {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+  }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0px;
+    transition: all 0.2s ease;
+    border: none;
+    height: 40px;
+    width: auto;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 5px;
+  }
+  .icon {
+    width: 30px;
+    height: 25px;
+  }
+  .icon1 {
+    width: 30px;
+    height: 25px;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    color: white;
+    top: 1;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  .cta span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: black;
+  }
+
+  .cta:hover:before {
+    width: 100%;
+    background-color: rgb(200, 219, 243);
+    box-shadow: -4px -2px 16px 0px #ffffff,
+      4px 2px 16px 0px rgb(95 157 231 / 48%);
+  }
+  .cta:active {
+    color: white;
+    transform: scale(0.95);
+  }
+  .cta span {
+    font-size: 0px;
+  }
+ .son-profile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.son-profile p{
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0; text-align: center;
+}
+.edit-button{
+  display:inline-block;
+  margin-top: -20px;
+  background-color: transparent;
+  border: none; 
+  color: black; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+  .profile-icon {
+    height: 100%;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /** Middle **/
+  .middle {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 47px;
+    left: 0;
+    right: 0;
+    height: 87%;
+    margin-top: 0px;
+    margin-left: 0px;
+    /* background-color: rgb(248, 249, 250); */
+    background-color: rgb(244, 253, 255);
+    /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.3); */
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    border-radius: 0px;
+  }
+
+  .middle-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    margin: 0px;
+  }
+  .left-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45%;
+    border-radius: 5px;
+    width: 90%;
+    background-color: white;
+    /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.45); */
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    margin-top: 10px;
+  }
+  .left-one-title {
+    width: auto;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0px 5px 10px;
+  }
+  .left-one-status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    height: 75%;
+    margin: 0px;
+  }
+  .total-parking-slots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+    border: rgb(196, 196, 196) 3px solid;
+    border-radius: 10px;
+  }
+  .total-p-slots {
+    align-items: center;
+    font-weight: 600;
+    font-size: 10px;
+    margin: 0;
+  }
+  .inner-parking-slots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 70%;
+    width: 180px;
+  }
+  .inner-count-slots {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .inner-parking-logo {
+    margin-bottom: 0px;
+  }
+  .inner-parking-logo img {
+    height: 50px;
+    width: 40px;
+  }
+
+  .available-slots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+    border: rgb(8, 31, 92) 3px solid;
+    border-radius: 10px;
+  }
+
+  .occupied-slots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+    border: red 3px solid;
+    border-radius: 10px;
+  }
+
+  /* mother div */
+  .left-two {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    width: 90%; /* Adjusted width */
+    height: auto; /* Adjusted height */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  }
+  .table {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .recently-data-table {
+    width: 100%; /* Adjusted width */
+    border-collapse: collapse;
+  }
+
+  .title-recently-table {
+    margin: 5px 0px 5px 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .recently-table-container {
+    width: 100%;
+    height: auto; /* Adjusted height */
+  }
+  .mother-data {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mother1-data {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .data-row {
+    display: flex;
+    width: auto;
+  }
+  .data-raw {
+    display: flex;
+    width: auto;
+  }
+  .padded-cell {
+    padding: 10px;
+  }
+  .table-row {
+    background-color: rgb(244, 253, 255);
+  }
+  .table-header {
+    padding: 1px; /* Reduced padding */
+    font-size: 10px; /* Reduced font size */
+  }
+
+  /* Align text in cells */
+  .recently-data-table th,
+  .recently-data-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px; /* Reduced padding */
+    font-size: 12px; /* Adjusted font size */
+
+    max-width: 150px; /* Adjust as necessary */
+    word-wrap: break-word; /* Older syntax */
+    overflow-wrap: break-word; /* Modern syntax */
+  }
+
+  /* .left-three{
+    flex: 1;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    width: 50%;
+  } */
+
+  /** Middle right **/
+  .middle-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .left-four {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    height: 40%;
+    /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.45); */
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+  }
+  .calendar-container {
+    display: flex;
+    margin: auto; /* Center the container */
+    width: 100%; /* Adjust width as needed */
+    justify-content: center;
+    align-items: center;
+  }
+  .spacing {
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  .month-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-bottom: 5px; /* Space between month/year and calendar */
+    margin: 20px 0px 0px 0px;
+  }
+  .month-year {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .calendar-table {
+    width: 85%;
+    border-collapse: collapse; /* Borders collapse into a single border between cells */
+    table-layout: fixed;
+  }
+  .calendar-table th {
+    padding: 0px 10px 5px 0px; /* Adjust as needed */
+    font-size: 12px;
+  }
+  .calendar-table td {
+    text-align: center; /* Centers content horizontally */
+    vertical-align: middle; /* Centers content vertically */
+    padding: 0px 10px 5px 0px; /* Adjust as needed */
+    font-size: 10px;
+  }
+  /* .calendar-table th, .calendar-table td {
+  padding: 0px 10px 5px 0px;
+  font-size: 14px;
+} */
+
+  .calendar-table .highlight {
+    background-color: black; /* Example highlight color for current date */
+    color: white;
+    border-radius: 10%;
+    height: 10px;
+    width: 10px;
+  }
+
+  .left-five {
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    flex: none;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  }
+  .data-exit {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(245, 81, 80);
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .data-entry {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(51, 173, 51);
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .vertical-line {
+    border-left: 2px solid rgb(121, 119, 119); /* Thickness and color of the line */
+    height: 30px; /* Height of the line */
+    margin: 0px 10px; /* Spacing around the line */
+    display: inline-block;
+  }
+  .data-uid-datetime {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    line-height: 15px;
+  }
+  .data-uid {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(121, 119, 119);
+  }
+  .data-datetime {
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+  }
+  .route-exit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    color: red;
+  }
+  .route-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    color: green;
+  }
+
+  .left-six {
+    background-color: white;
+    height: 277px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #ffffff 0%, #000000 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the thumb */
+  }
+
+  /* Horizontal scrollbar */
+  .left-two::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 10px;
+  }
+  /* Horizontal scrollbar */
+  .left-five::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 10px;
+  }
+
+  /* Style the scrollbar thumb */
+  .left-two::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #ffffff 0%, #000000 99%);
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+  }
+
+  /* Style the scrollbar track */
+  .left-two::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+
+  /* Hover effect for the scrollbar thumb */
+  .left-two::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the thumb */
+  }
+  .bottom {
+    display: none;
+  }
+}

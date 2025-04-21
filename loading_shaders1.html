@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .loader {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .truckWrapper {
+      width: 200px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      justify-content: flex-end;
+      overflow-x: hidden;
+    }
+
+    /* truck upper body */
+    .truckBody {
+      width: 130px;
+      height: fit-content;
+      margin-bottom: 6px;
+      animation: motion 1s linear infinite;
+    }
+
+    /* truck suspension animation*/
+    @keyframes motion {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(3px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    /* truck's tires */
+    .truckTires {
+      width: 130px;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 10px 0px 15px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .truckTires svg {
+      width: 24px;
+    }
+
+    .road {
+      width: 100%;
+      height: 1.5px;
+      background-color: #282828;
+      position: relative;
+      bottom: 0;
+      align-self: flex-end;
+      border-radius: 3px;
+    }
+
+    .road::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      background-color: #282828;
+      right: -50%;
+      border-radius: 3px;
+      animation: roadAnimation 1.4s linear infinite;
+      border-left: 10px solid white;
+    }
+
+    .road::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 100%;
+      background-color: #282828;
+      right: -65%;
+      border-radius: 3px;
+      animation: roadAnimation 1.4s linear infinite;
+      border-left: 4px solid white;
+    }
+
+    .lampPost {
+      position: absolute;
+      bottom: 0;
+      right: -90%;
+      height: 90px;
+      animation: roadAnimation 1.4s linear infinite;
+    }
+
+    @keyframes roadAnimation {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(-350px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div class="truckWrapper">
+      <div class="truckBody">
+        <svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path d="M766.976 508.736c80.576 0 152.448 32.128 199.232 82.176" fill="#AEBCC3" />
+          <path d="M64.704 684.992c10.816 19.2 32.064 32.192 56.576 32.192h784.64c35.84 0 64.832-27.648 64.832-61.76v-17.408h-36.608a15.744 15.744 0 0 1-16.064-15.296V550.912a277.568 277.568 0 0 0-150.144-44.16h1.6l-55.04-0.256c-53.632-115.2-157.504-210.752-294.208-210.752-136.512 0-251.008 89.728-282.176 210.688h-16.832c-35.456 0-56.128 27.392-56.128 61.184" fill="#E8447A" />
+          <path d="M64.704 654.464h13.76a39.168 39.168 0 0 0 40.064-38.272v-17.6c0-21.12-17.92-38.208-40.064-38.208h-13.376" fill="#F5BB1D" />
+          <path d="M160 684.992a101.632 96.832 0 1 0 203.264 0 101.632 96.832 0 1 0-203.264 0Z" fill="#455963" />
+          <path d="M218.88 684.992a42.752 40.768 0 1 0 85.504 0 42.752 40.768 0 1 0-85.504 0Z" fill="#AEBCC3" />
+          <path d="M652.032 684.992a101.568 96.832 0 1 0 203.136 0 101.568 96.832 0 1 0-203.136 0Z" fill="#455963" />
+          <path d="M710.912 684.992a42.752 40.768 0 1 0 85.504 0 42.752 40.768 0 1 0-85.504 0Z" fill="#AEBCC3" />
+          <path d="M966.272 591.104v-0.192a257.92 257.92 0 0 0-48.192-40V622.72c0 8.448 7.232 15.296 16.064 15.296h36.608v-42.304l-4.48-4.608z" fill="#F5BB1D" />
+          <path d="M405.568 335.616c-104.896 6.336-191.296 76.8-216.64 170.816h216.64V335.616zM445.696 506.432h216.64c-41.216-86.848-117.12-159.616-216.64-170.048v170.048z" fill="#631536" />
+        </svg>
+      </div>
+      <div class="truckTires">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 30 30"
+          class="tiresvg"
+        >
+          <circle
+            stroke-width="3"
+            stroke="#282828"
+            fill="#282828"
+            r="13.5"
+            cy="15"
+            cx="15"
+          ></circle>
+          <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 30 30"
+          class="tiresvg"
+        >
+          <circle
+            stroke-width="3"
+            stroke="#282828"
+            fill="#282828"
+            r="13.5"
+            cy="15"
+            cx="15"
+          ></circle>
+          <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+        </svg>
+      </div>
+      <div class="road"></div>
+
+      <svg
+        xml:space="preserve"
+        viewBox="0 0 453.459 453.459"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns="http://www.w3.org/2000/svg"
+        id="Capa_1"
+        version="1.1"
+        fill="#000000"
+        class="lampPost"
+      >
+        <path
+          d="M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+          c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+          c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+          c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+          h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+          v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+          V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+          M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+          h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

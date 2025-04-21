@@ -1,0 +1,1019 @@
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .parking-customization-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+  }
+  .car-image {
+    width: 75px;
+    margin: 10px;
+  }
+
+  .parking-spot-1,
+  .parking-spot-2,
+  .parking-spot-3,
+  .parking-spot-4 {
+    font-size: 10px;
+  }
+
+  .parking-spot-1 {
+    top: 45%;
+    left: 30%;
+  }
+
+  /* car 2 */
+  .parking-spot-2 {
+    position: absolute;
+    transform: rotate(310deg);
+  }
+
+  .parking-spot-2 {
+    top: 62%;
+    left: 30%;
+  }
+
+  .parking-spot-3 {
+    top: 45%;
+    left: 37.5vw;
+  }
+
+  .parking-spot-4 {
+    top: 62%;
+    left: 38%;
+  }
+
+  .parking-spot-5 {
+    top: 45%;
+    left: 44%;
+
+  }
+
+  .parking-spot-6 {
+    top: 62%;
+    left: 45vw;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1850px) {
+
+  .car-image {
+    width: 5vw;
+    margin: 10px;
+  }
+
+  .maintenance-image {
+    width: 4.5vw;
+    margin: 10px;
+  }
+  
+  .R-parking-spot-1 {
+    top: 52vh;
+    left: 34vw;
+  }
+  
+  .R-maintenance-spot-1 {
+    top: 52vh;
+    left: 34.4vw;
+  }
+  
+  .R-parking-spot-2 {
+    top: 52vh;
+    left: 39.3vw;
+  }
+  
+  .R-maintenance-spot-2 {
+    top: 52vh;
+    left: 39.5vw;
+  }
+  
+  .R-parking-spot-3 {
+    top: 52vh;
+    left: 44.5vw;
+  }
+  
+  .R-maintenance-spot-3 {
+    top: 52vh;
+    left: 44.8vw;
+  }
+
+  .R-maintenance-spot-4 {
+    top: 52vh;
+    left: 50vw;
+  }
+
+  .R-maintenance-spot-5 {
+    top: 52vh;
+    left: 55.3vw;
+  }
+
+  .R-maintenance-spot-6 {
+    top: 52vh;
+    left: 60.8vw;
+  }
+  
+  .L-parking-spot-1 {
+    top: 72vh;
+    left: 31.5vw;
+  }
+  
+  .L-maintenance-spot-1 {
+    top: 71vh;
+    left: 31.8vw;
+  }
+  
+  .L-parking-spot-2 {
+    top: 72vh;
+    left: 36.5vw;
+  }
+  
+  .L-maintenance-spot-2 {
+    top: 71vh;
+    left: 36.8vw;
+  }
+  
+  .L-parking-spot-3 {
+    top: 72vh;
+    left: 41.5vw;
+  }
+  
+  .L-maintenance-spot-3 {
+    top: 71vh;
+    left: 41.8vw;
+  }
+
+  .L-maintenance-spot-4 {
+    top: 71vh;
+    left: 46.6vw;
+  }
+
+  .L-maintenance-spot-5 {
+    top: 71vh;
+    left: 51.1vw;
+  }
+
+  .L-maintenance-spot-6 {
+    top: 71vh;
+    left: 55.7vw;
+  }
+  
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1536px) {
+
+  .car-image {
+    width: 5vw;
+    margin: 10px;
+  }
+
+  .maintenance-image {
+    width: 4.5vw;
+    margin: 10px;
+  }
+  
+  .R-parking-spot-1 {
+    top: 53vh;
+    left: 34vw;
+  }
+  
+  .R-maintenance-spot-1 {
+    top: 54vh;
+    left: 34vw;
+  }
+  
+  .R-parking-spot-2 {
+    top: 53vh;
+    left: 39vw;
+  }
+  
+  .R-maintenance-spot-2 {
+    top: 54vh;
+    left: 38.9vw;
+  }
+  
+  .R-parking-spot-3 {
+    top: 53vh;
+    left: 44.5vw;
+  }
+  
+  .R-maintenance-spot-4 {
+    top: 54vh;
+    left: 49.5vw;
+  }
+
+  .R-maintenance-spot-5 {
+    top: 54vh;
+    left: 54.8vw;
+  }
+  .R-maintenance-spot-6 {
+    top: 54vh;
+    left: 60.3vw;
+  }
+  
+  .L-parking-spot-1 {
+    top: 72vh;
+    left: 31.5vw;
+  }
+  
+  .L-maintenance-spot-1 {
+    top: 72vh;
+    left: 31.6vw;
+  }
+  
+  .L-parking-spot-2 {
+    top: 72vh;
+    left: 36.5vw;
+  }
+  
+  .L-maintenance-spot-2 {
+    top: 72vh;
+    left: 36.5vw;
+  }
+  
+  .L-parking-spot-3 {
+    top: 72vh;
+    left: 41.5vw;
+  }
+  
+  .L-maintenance-spot-3 {
+    top: 72vh;
+    left: 41.5vw;
+  }
+
+  .L-maintenance-spot-4 {
+    top: 72vh;
+    left: 46.4vw;
+  }
+  .L-maintenance-spot-5 {
+    top: 72vh;
+    left: 50.9vw;
+  }
+  .L-maintenance-spot-6 {
+    top: 72vh;
+    left: 55.4vw;
+  }
+}
+
+
+@media screen and (min-width: 1400px) and (max-width: 1440px) {
+
+  .car-image {
+    width: 5vw;
+    margin: 10px;
+  }
+
+  .maintenance-image {
+    width: 4.5vw;
+    margin: 10px;
+  }
+
+  .R-parking-spot-1 {
+    top: 54.5vh;
+    left: 34vw;
+  }
+  
+  .R-maintenance-spot-1 {
+    top: 55vh;
+    left: 34.2vw;
+  }
+  
+  .R-parking-spot-2 {
+    top: 54.5vh;
+    left: 39vw;
+  }
+  
+  .R-maintenance-spot-2 {
+    top: 55vh;
+    left: 39.2vw;
+  }
+  
+  .R-parking-spot-3 {
+    top: 54.5vh;
+    left: 44.5vw;
+  }
+  
+  .R-maintenance-spot-3 {
+    top: 55vh;
+    left: 44.5vw;
+  }
+
+  .R-maintenance-spot-4 {
+    top: 55vh;
+    left: 49.8vw;
+  }
+  
+  .R-maintenance-spot-5 {
+    top: 55vh;
+    left: 55.1vw;
+  }
+  .R-maintenance-spot-6 {
+    top: 55vh;
+    left: 60.5vw;
+  }
+  
+  .L-parking-spot-1 {
+    top: 73vh;
+    left: 31.5vw;
+  }
+  
+  .L-maintenance-spot-1 {
+    top: 73vh;
+    left: 31.6vw;
+  }
+  
+  .L-parking-spot-2 {
+    top: 73vh;
+    left: 36.5vw;
+  }
+  
+  .L-maintenance-spot-2 {
+    top: 73vh;
+    left: 36.5vw;
+  }
+  
+  .L-parking-spot-3 {
+    top: 73vh;
+    left: 41.5vw;
+  }
+  
+  .L-maintenance-spot-3 {
+    top: 73vh;
+    left: 41.5vw;
+  }
+  
+  .L-maintenance-spot-4 {
+    top: 73vh;
+    left: 46.4vw;
+  }
+
+  .L-maintenance-spot-5 {
+    top: 73vh;
+    left: 50.9vw;
+  }
+
+  .L-maintenance-spot-6 {
+    top: 73vh;
+    left: 55.4vw;
+  }
+}
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 768px) {
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh; /* Ensure the body height matches the viewport */
+    margin: 0;
+    background-image: url("../../image/background.avif");
+    background-size: cover; /* Adjusts the image to cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    overflow: hidden;
+  }
+  .header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+  }
+  .header-son {
+    display: flex;
+    height: 100%;
+  }
+  .logo-name-container {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+  }
+  .logo-container {
+    display: flex;
+
+    width: 130px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+  }
+  .logo-name-container p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-left: -15px;
+  }
+  .logo {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  /* Nav Container*/
+  .nav-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure the pseudo-element is positioned relative to the button */
+    transition: color 0.15s ease; /* Smooth transition for text color */
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 10px;
+  }
+
+  .cta span {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: black;
+    position: relative; /* Make sure span is positioned relative */
+  }
+
+  .cta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Adjust thickness */
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.15s ease;
+  }
+
+  .cta:hover::after {
+    transform: scaleX(1);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    line-height: 80px;
+  }
+
+  .slots-counter{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+  .avail-slots{
+    display: flex;
+    height: 50px;
+    width: 190px;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#A8D5BA ;
+    border-radius: 2.5%;
+    margin-bottom: 40px;
+  }
+  .occu-slots{
+    background-color: #E6A6A6;
+    display: flex;
+    height: 50px;
+    width: 190px;
+    align-items: center;
+    border-radius: 2.5%;
+  }
+  .slots-counter span{
+    font-size: 20px;
+    margin: 0px 5px 0px 5px;
+    font-weight: 600;
+  }
+
+  .parking-status {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 90%;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .header-table {
+    position: sticky;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+    padding-top: 0;
+  }
+
+  .header-title {
+    margin-left: 10px;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .container-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .parking-customization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 360px;
+    min-width: 300px;
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  .customization-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .customization-info img {
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-top: 130px;
+    min-width: 750px;
+    margin-bottom: 200px;
+  }
+
+  .parking-spot-1,
+  .parking-spot-2,
+  .parking-spot-3,
+  .parking-spot-4,
+  .parking-spot-5,
+  .parking-spot-6 {
+    position: absolute;
+    z-index: 2;
+  }
+
+.car-image {
+    width: 60px;
+    height: auto;
+    max-width: auto;
+  }
+
+  .maintenance-image{
+    width: 55px;
+    margin: 10px;
+  }
+
+  .R-parking-spot-1 {
+    transform: rotate(218deg);
+    top: 19%;
+    left: 54%;
+  }
+  .R-maintenance-spot-1 {
+    transform: rotate(110deg);
+    top: 19.5%;
+    left: 47%;
+  }
+
+  .R-parking-spot-2 {
+    transform: rotate(218deg);
+    top: 25.5%;
+    left: 54%;
+  }
+  .R-maintenance-spot-2 {
+    transform: rotate(110deg);
+    top: 26.1%;
+    left: 47%;
+  }
+
+  .R-parking-spot-3 {
+    transform: rotate(218deg);
+    top: 33%;
+    left: 54%;
+  }
+  .R-maintenance-spot-3 {
+    transform: rotate(110deg);
+    top: 33.1%;
+    left: 47%;
+  }
+
+  .R-maintenance-spot-4 {
+    transform: rotate(110deg);
+    top: 40%;
+    left: 47%;
+  }
+
+  .R-maintenance-spot-5 {
+    transform: rotate(110deg);
+    top: 46.8%;
+    left: 47%;
+  }
+
+  .R-maintenance-spot-6 {
+    transform: rotate(110deg);
+    top: 53.7%;
+    left: 47%;
+  }
+
+  .L-parking-spot-1 {
+    transform: rotate(360deg);
+    top: 20.4%;
+    left: 17%;
+  }
+  .L-maintenance-spot-1 {
+    transform: rotate(110deg);
+    top: 16.5%;
+    left: 13.5%;
+  }
+
+  .L-parking-spot-2 {
+    transform: rotate(360deg);
+    top: 26.8%;
+    left: 17%;
+  }
+  .L-maintenance-spot-2 {
+    transform: rotate(110deg);
+    top: 22.9%;
+    left: 13.5%;
+  }
+  .L-parking-spot-3 {
+    transform: rotate(360deg);
+    top: 33.2%;
+    left: 17%;
+  }
+  .L-maintenance-spot-3 {
+    transform: rotate(110deg);
+    top: 29.3%;
+    left: 13.5%;
+  }
+
+  .L-maintenance-spot-4 {
+    transform: rotate(110deg);
+    top: 35.7%;
+    left: 13.5%;
+  }
+
+  .L-maintenance-spot-5 {
+    transform: rotate(110deg);
+    top: 41.6%;
+    left: 13.5%;
+  }
+
+  .L-maintenance-spot-6 {
+    transform: rotate(110deg);
+    top: 47.6%;
+    left: 13.5%;
+  }
+}
+
+@media (width <470px) {
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    line-height: 80px;
+  }
+
+  .slots-counter{
+    width: 300px;
+  }
+  .avail-slots, .occu-slots{
+    height: 40px;
+    width: 140px;
+  }
+  .slots-counter span{
+    font-size: 14px;
+  }
+  
+  .parking-status {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 77%;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .header-table {
+    position: sticky;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+    padding-top: 0;
+  }
+
+  .header-title {
+    margin-left: 10px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .container-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .parking-customization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 300px;
+    min-width: 300px;
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  .customization-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .customization-info img {
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-top: 100px;
+    min-width: 670px;
+    margin-bottom: 170px;
+  }
+
+  .car-image {
+    width: 55px;
+    height: auto;
+    max-width: auto;
+  }
+
+  .maintenance-image{
+    width: 50px;
+    margin: 10px;
+  }
+
+  .R-parking-spot-1 {
+    transform: rotate(218deg);
+    top: 16.5%;
+    left: 55%;
+  }
+  .R-maintenance-spot-1 {
+    transform: rotate(110deg);
+    top: 17%;
+    left: 46%;
+  }
+
+  .R-parking-spot-2 {
+    transform: rotate(218deg);
+    top: 23.4%;
+    left: 55%;
+  }
+  .R-maintenance-spot-2 {
+    transform: rotate(110deg);
+    top: 24%;
+    left: 46%;
+  }
+
+  .R-parking-spot-3 {
+    transform: rotate(218deg);
+    top: 30.8%;
+    left: 55%;
+  }
+  .R-maintenance-spot-3 {
+    transform: rotate(110deg);
+    top: 31.2%;
+    left: 46%;
+  }
+
+  .R-maintenance-spot-4 {
+    transform: rotate(110deg);
+    top: 38.4%;
+    left: 46%;
+  }
+
+  .R-maintenance-spot-5 {
+    transform: rotate(110deg);
+    top: 45.5%;
+    left: 46%;
+  }
+
+  .R-maintenance-spot-6 {
+    transform: rotate(110deg);
+    top: 53%;
+    left: 46%;
+  }
+  .L-parking-spot-1 {
+    transform: rotate(360deg);
+    top: 18.4%;
+    left: 14%;
+  }
+  .L-maintenance-spot-1 {
+    transform: rotate(110deg);
+    top: 14%;
+    left: 10%;
+  }
+
+  .L-parking-spot-2 {
+    transform: rotate(360deg);
+    top: 25%;
+    left: 14%;
+  }
+  .L-maintenance-spot-2 {
+    transform: rotate(110deg);
+    top: 20.4%;
+    left: 10%;
+  }
+  .L-parking-spot-3 {
+    transform: rotate(360deg);
+    top: 31.5%;
+    left: 14%;
+  }
+  .L-maintenance-spot-3 {
+    transform: rotate(110deg);
+    top: 27.5%;
+    left: 10%;
+  }
+
+  .L-maintenance-spot-4 {
+    transform: rotate(110deg);
+    top: 34%;
+    left: 10%;
+  }
+
+  .L-maintenance-spot-5 {
+    transform: rotate(110deg);
+    top: 40%;
+    left: 10%;
+  }
+
+  .L-maintenance-spot-6 {
+    transform: rotate(110deg);
+    top: 46.3%;
+    left: 10%;
+  }
+}
+
+/* Tablet
+
+@media (min-width: 710px ) and (max-width: 720px) {
+  .car-image {
+    width: 60px;
+    height: auto;
+    max-width: auto;
+  }
+
+  .maintenance-image{
+    width: 55px;
+    margin: 10px;
+  }
+
+  .R-parking-spot-1 {
+    transform: rotate(218deg);
+    top: 22%;
+    left: 54%;
+  }
+  .R-maintenance-spot-1 {
+    transform: rotate(110deg);
+    top: 22.6%;
+    left: 47%;
+  }
+
+  .R-parking-spot-2 {
+    transform: rotate(218deg);
+    top: 28.4%;
+    left: 54%;
+  }
+  .R-maintenance-spot-2 {
+    transform: rotate(110deg);
+    top: 28.5%;
+    left: 47%;
+  }
+
+  .R-parking-spot-3 {
+    transform: rotate(218deg);
+    top: 34.5%;
+    left: 54%;
+  }
+  .R-maintenance-spot-3 {
+    transform: rotate(110deg);
+    top: 34.8%;
+    left: 47%;
+  }
+
+  .L-parking-spot-1 {
+    transform: rotate(360deg);
+    top: 23.5%;
+    left: 17%;
+  }
+  .L-maintenance-spot-1 {
+    transform: rotate(110deg);
+    top: 20.2%;
+    left: 13.5%;
+  }
+
+  .L-parking-spot-2 {
+    transform: rotate(360deg);
+    top: 29.4%;
+    left: 17%;
+  }
+  .L-maintenance-spot-2 {
+    transform: rotate(110deg);
+    top: 25.8%;
+    left: 13.5%;
+  }
+  .L-parking-spot-3 {
+    transform: rotate(360deg);
+    top: 35.2%;
+    left: 17%;
+  }
+  .L-maintenance-spot-3 {
+    transform: rotate(110deg);
+    top: 31.6%;
+    left: 13.5%;
+  }
+  
+  } */

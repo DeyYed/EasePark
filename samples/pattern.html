@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+/* Basic Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Body styling */
+body {
+  background-color: #f0f0f0; /* Light grey background for contrast */
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the pattern */
+.pattern {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #333; /* Dark grey background for the parking lot */
+}
+
+/* Create the grid for parking spaces with lines */
+.pattern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    repeating-linear-gradient(to bottom, transparent, transparent 40px, #666 40px, #666 42px),
+    repeating-linear-gradient(to right, transparent, transparent 60px, #666 60px, #666 62px);
+  background-size: 60px 40px; /* Size of each parking space */
+  z-index: 0;
+}
+
+/* Create vehicle icons */
+.vehicle {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #007bff; /* Example color for vehicles */
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Positioning vehicles in the grid */
+.vehicle:nth-child(1) { top: 10px; left: 10px; }
+.vehicle:nth-child(2) { top: 50px; left: 80px; }
+.vehicle:nth-child(3) { top: 90px; left: 150px; }
+/* Add more vehicles as needed */
+
+/* Create parking lines for rows and columns */
+.line-horizontal, .line-vertical {
+  position: absolute;
+  background-color: #666;
+  z-index: 0;
+}
+
+.line-horizontal {
+  height: 2px;
+  width: 100%;
+}
+
+.line-vertical {
+  width: 2px;
+  height: 100%;
+}
+
+/* Positioning horizontal lines */
+.line-horizontal:nth-child(2) { top: 60px; }
+.line-horizontal:nth-child(3) { top: 120px; }
+.line-horizontal:nth-child(4) { top: 180px; }
+/* Add more lines as needed */
+
+/* Positioning vertical lines */
+.line-vertical:nth-child(5) { left: 60px; }
+.line-vertical:nth-child(6) { left: 120px; }
+.line-vertical:nth-child(7) { left: 180px; }
+/* Add more lines as needed */
+
+  </style>
+</head>
+<body>
+  <div class="pattern">
+    <!-- Lines for parking spaces -->
+    <div class="line-horizontal"></div>
+    <div class="line-horizontal"></div>
+    <div class="line-horizontal"></div>
+    <div class="line-horizontal"></div>
+    <div class="line-vertical"></div>
+    <div class="line-vertical"></div>
+    <div class="line-vertical"></div>
+    
+    <!-- Vehicle elements -->
+    <div class="vehicle"></div>
+    <div class="vehicle"></div>
+    <div class="vehicle"></div>
+    <!-- Add more vehicles as needed -->
+  </div>
+</body>
+</html>

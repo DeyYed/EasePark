@@ -1,0 +1,698 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+}
+
+.name-edit-container {
+  height: 75px;
+  display: flex;
+  flex: 0.99;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  padding: 0 15px; /* Add horizontal padding */
+  margin: 10px 0;
+}
+
+.name-edit-container div {
+  display: inline;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 75px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.cyberpark-logo {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 60px 10px 20px;
+}
+
+.header-title {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+}
+
+.back-button {
+  font-family: "Montserrat", sans-serif;
+  color: #090909;
+  width: 70px;
+  height: 40px;
+  font-size: 12px;
+  border-radius: 15%;
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.back-button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+  box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.left-dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  height: 82%;
+  /* background-color: rgb(248, 249, 250); */
+  /* background-color: rgb(244, 253, 255); */
+  background-color: white;
+  width: 200px;
+}
+.son-left-dashboard {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.icon1 {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+  border: none;
+  height: 40px;
+  width: 150px;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  padding: 12px 10px;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  color: white;
+  top: 1;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background-color: rgb(200, 219, 243);
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+.cta:active {
+  color: white;
+  transform: scale(0.95);
+}
+
+.son-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  width: 150px;
+  overflow: hidden;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+.son-dashboard:hover {
+  color: white;
+  background-color: black;
+}
+
+.son-profile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.son-profile p{
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0; text-align: center;
+}
+.edit-button{
+  margin-top: -20px;
+  background-color: transparent;
+  display: inline-block; 
+  border: none; 
+  color: black; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.profile-icon {
+  height: 95px;
+  width: 54px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Middle */
+.middle {
+  display: flex;
+  border-radius: 10px;
+  width: 89.9%;
+  height: 82%;
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 200px;
+  background-color: rgb(244, 253, 255);
+  /* box-shadow: 0px 1px 12px 1px rgba(0,0,0,0.3); */
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+}
+
+.parking-status {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 92%;
+  margin: 40px 40px 0px 40px;
+  background-color: white;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  overflow: hidden; /* To avoid overflow */
+}
+
+.content-parkingstatus {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  flex: 1;
+  position: relative;
+}
+
+.container-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header-table {
+  margin-bottom: 0;
+}
+
+.parking-customization-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%; /* Make it responsive */
+  max-width: 100%; /* Prevent overflowing */
+  margin: auto;
+  margin-right: 10px;
+}
+
+.customization-info {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.customization-info img {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 100%;
+  max-height: 645px;
+}
+
+
+.car-image {
+  width: 5.5vw;
+  margin: 10px;
+  visibility: hidden;
+}
+
+.occupied .car-image {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* For available spots */
+.available .car-image {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+/* Maintenance status */
+.maintenance-image {
+  width: 5.5vw;
+  margin: 10px;
+}
+
+/* car 1 */
+
+.R-parking-spot-1 {
+  position: absolute;
+  transform: rotate(135deg);
+}
+
+.R-parking-spot-1 {
+  top: 34vh;
+  left: 28vw;
+}
+
+.R-parking-spot-1.occupied {
+  color: red;
+}
+
+.R-parking-spot-1.available {
+  display: block;
+}
+
+.R-maintenance-spot-1 {
+  display: none;
+  position: absolute;
+  top: 32vh;
+  left: 27.7vw;
+}
+
+.R-maintenance-spot-1.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+
+/* car 2 */
+.R-parking-spot-2 {
+  position: absolute;
+  transform: rotate(135deg);
+}
+
+.R-parking-spot-2 {
+  top: 34vh;
+  left: 33.3vw;
+}
+
+.R-parking-spot-2.occupied {
+  color: red;
+}
+
+.R-parking-spot-2.available {
+  display: block;
+}
+
+.R-maintenance-spot-2 {
+  display: none;
+  position: absolute;
+  top: 32vh;
+  left: 33vw;
+}
+
+.R-maintenance-spot-2.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+/* car 3 */
+.R-parking-spot-3 {
+  position: absolute;
+  transform: rotate(135deg);
+}
+
+.R-parking-spot-3 {
+  top: 34vh;
+  left: 39vw;
+}
+
+.R-parking-spot-3.occupied {
+  color: red;
+}
+
+.R-parking-spot-3.available {
+  display: block;
+}
+
+.R-maintenance-spot-3 {
+  display: none;
+  position: absolute;
+  top: 32vh;
+  left: 38.7vw;
+}
+
+.R-maintenance-spot-3.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+.R-maintenance-spot-4 {
+  display: block;
+  position: absolute;
+  top: 32vh;
+  left: 44.9vw;
+}
+
+.R-maintenance-spot-4.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+.R-maintenance-spot-5 {
+  display: block;
+  position: absolute;
+  top: 32vh;
+  left: 50.6vw;
+}
+
+.R-maintenance-spot-5.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+.R-maintenance-spot-6 {
+  display: block;
+  position: absolute;
+  top: 32vh;
+  left: 56.4vw;
+}
+
+.R-maintenance-spot-6.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+
+/* car 4 */
+
+.L-parking-spot-1 {
+  position: absolute;
+  transform: rotate(270deg);
+}
+
+.L-parking-spot-1 {
+  top: 55.5vh;
+  left: 25.3vw;
+
+}
+
+.L-parking-spot-1.occupied {
+  color: red;
+}
+
+.L-parking-spot-1.available {
+  display: block;
+}
+
+.L-maintenance-spot-1 {
+  display: none;
+  position: absolute;
+  top: 53vh;
+  left: 25.3vw;
+}
+
+.L-maintenance-spot-1.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+/*car 5 */
+.L-parking-spot-2 {
+  position: absolute;
+  transform: rotate(270deg);
+}
+
+.L-parking-spot-2 {
+  top: 55.5vh;
+  left: 30.5vw;
+}
+
+.L-parking-spot-2.occupied {
+  color: red;
+}
+
+.L-parking-spot-2.available {
+  display: block;
+}
+.L-maintenance-spot-2 {
+  display: none;
+  position: absolute;
+  top: 53vh;
+  left: 30.5vw;
+}
+
+.L-maintenance-spot-2.active {
+  display: block;  /* Show the maintenance image when active */
+}
+/* car 6 */
+
+.L-parking-spot-3 {
+  position: absolute;
+  transform: rotate(270deg);
+}
+
+.L-parking-spot-3 {
+  top: 55.5vh;
+  left: 36vw;
+}
+
+.L-parking-spot-3.occupied {
+  color: red;
+}
+
+.L-parking-spot-3.available {
+  display: block;
+}
+
+.L-maintenance-spot-3 {
+  display: none;
+  position: absolute;
+  top: 53vh;
+  left: 35.8vw;
+}
+
+.L-maintenance-spot-3.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+.L-maintenance-spot-4 {
+  display: block;
+  position: absolute;
+  top: 53vh;
+  left: 41vw;
+}
+
+.L-maintenance-spot-4.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+.L-maintenance-spot-5 {
+  display: block;
+  position: absolute;
+  top: 53vh;
+  left: 45.8vw;
+}
+
+.L-maintenance-spot-5.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+.L-maintenance-spot-6 {
+  display: block;
+  position: absolute;
+  top: 53vh;
+  left: 50.8vw;
+}
+
+.L-maintenance-spot-6.active {
+  display: block;  /* Show the maintenance image when active */
+}
+
+.bottom {
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 13, 24);
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  padding: 5px; /* Add some padding */
+}
+.logout-container button{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.logout-container form {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Remove default margin from form */
+  background-color: transparent;
+}
+.logout-icon{
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.logout-container input[type="submit"] , .button-logout{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px; /* Set font size */
+  color: red;
+  border: none;
+  border-radius: 4px; /* Optional: rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  background-color: transparent;
+}

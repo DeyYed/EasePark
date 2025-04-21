@@ -1,0 +1,192 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(244,249,255);
+  height: 100%;
+  margin: 0;
+
+  background-image: url('../../image/background.avif');
+  background-size: cover; /* Adjusts the image to cover the entire element */
+  background-position: center; /* Centers the image */
+}
+.container{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+.logo-container{
+  position: absolute;
+  overflow: hidden;
+  top: -70px; /* Adjust as needed for vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for center alignment */
+}
+.cyberpark-logo{
+  width: 153px; 
+  height: 120px;
+  object-fit: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px; /* Fixed width */
+  max-width: 400px; /* Fixed width */
+  gap: 10px;
+  padding: 20px;
+  /* border-radius: 20px; */
+  position: relative;
+  /* background-color: white; */
+  /* border:1px solid rgba(255, 255, 255, 0.18); */
+  /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: black;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: rgb(39, 55, 77);
+}
+
+.message, 
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 95%;
+  gap: 30px;
+}
+
+.form label {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.form label .input {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(217,217,217);
+  color: black;
+  width: 95%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: none;
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.form label .input:placeholder-shown + span {
+  font-family: "Montserrat", sans-serif;
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 800;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: white;
+  transition: 0.15s;
+}
+
+.submit:hover {
+  box-shadow: .5px .5px 1px black, inset -.5px -.5px 15px black;
+  color: black;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.bottom{
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,13,24);
+}

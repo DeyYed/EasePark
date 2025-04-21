@@ -1,0 +1,457 @@
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .parking-customization-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+  }
+  .car-image {
+    width: 75px;
+    margin: 10px;
+  }
+
+  .parking-spot-1,
+  .parking-spot-2,
+  .parking-spot-3,
+  .parking-spot-4 {
+    font-size: 10px;
+  }
+
+  .parking-spot-1 {
+    top: 45%;
+    left: 30%;
+  }
+
+  /* car 2 */
+  .parking-spot-2 {
+    position: absolute;
+    transform: rotate(310deg);
+  }
+
+  .parking-spot-2 {
+    top: 62%;
+    left: 30%;
+  }
+
+  .parking-spot-3 {
+    top: 45%;
+    left: 44%;
+  }
+
+  .parking-spot-4 {
+    top: 62%;
+    left: 38%;
+  }
+
+  .parking-spot-5 {
+    top: 45%;
+    left: 37.5vw;
+  }
+
+  .parking-spot-6 {
+    top: 62%;
+    left: 45vw;
+  }
+}
+
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 768px) {
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh; /* Ensure the body height matches the viewport */
+    margin: 0;
+    background-image: url("../../image/background.avif");
+    background-size: cover; /* Adjusts the image to cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    overflow: hidden;
+  }
+  .header {
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+  }
+  .header-son {
+    display: flex;
+    height: 100%;
+  }
+  .logo-name-container {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    border: solid 1px blue;
+  }
+  .logo-container {
+    display: flex;
+
+    width: 130px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+  }
+  .logo-name-container p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-left: -15px;
+  }
+  .logo {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  /* Nav Container*/
+  .nav-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure the pseudo-element is positioned relative to the button */
+    transition: color 0.15s ease; /* Smooth transition for text color */
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 10px;
+  }
+
+  .cta span {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: black;
+    position: relative; /* Make sure span is positioned relative */
+  }
+
+  .cta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Adjust thickness */
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.15s ease;
+  }
+
+  .cta:hover::after {
+    transform: scaleX(1);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    line-height: 80px;
+  }
+
+
+  .parking-status {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 95%;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .header-table {
+    position: sticky;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+    padding-top: 0;
+  }
+
+  .header-title {
+    margin-left: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .container-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .parking-customization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 360px;
+    min-width: 300px;
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  .customization-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .customization-info img {
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-top: 130px;
+    min-width: 850px;
+    margin-right: 40px;
+    margin-bottom: 125px;
+  }
+
+  .parking-spot-1,
+  .parking-spot-2,
+  .parking-spot-3,
+  .parking-spot-4,
+  .parking-spot-5,
+  .parking-spot-6 {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .parking-spot-1 {
+    transform: rotate(310deg);
+    top: 18%;
+    left: 52%;
+  }
+  .parking-spot-2 {
+    transform: rotate(405deg);
+    top: 18%;
+    left: 11.5%;
+  }
+  .parking-spot-3 {
+    transform: rotate(310deg);
+    top: 38%;
+    left: 52%;
+  }
+  .parking-spot-4 {
+    transform: rotate(405deg);
+    top: 28%;
+    left: 11.5%;
+  }
+  .parking-spot-5 {
+    transform: rotate(310deg);
+    top: 28%;
+    left: 52%;
+  }
+  .parking-spot-6 {
+    transform: rotate(405deg);
+    top: 38%;
+    left: 11.5%;
+  }
+
+  .car-image {
+    width: 80px;
+    height: auto;
+    max-width: auto;
+  }
+}
+
+@media (width <410px) {
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    line-height: 80px;
+  }
+
+
+  .parking-status {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 95%;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .header-table {
+    position: sticky;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+    padding-top: 0;
+  }
+
+  .header-title {
+    margin-left: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .container-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .parking-customization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 300px;
+    min-width: 300px;
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  .customization-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .customization-info img {
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-top: 100px;
+    min-width: 670px;
+    margin-right: 40px;
+    margin-bottom: 125px;
+  }
+
+  .parking-spot-1,
+  .parking-spot-2,
+  .parking-spot-3,
+  .parking-spot-4,
+  .parking-spot-5,
+  .parking-spot-6 {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .parking-spot-1 {
+    transform: rotate(310deg);
+    top: 16%;
+    left: 51%;
+  }
+  .parking-spot-2 {
+    transform: rotate(405deg);
+    top: 16%;
+    left: 10%;
+  }
+  .parking-spot-3 {
+    transform: rotate(310deg);
+    top: 36%;
+    left: 51%;
+  }
+  .parking-spot-4 {
+    transform: rotate(405deg);
+    top: 26%;
+    left: 10%;
+  }
+  .parking-spot-5 {
+    transform: rotate(310deg);
+    top: 26%;
+    left: 51%;
+  }
+  .parking-spot-6 {
+    transform: rotate(405deg);
+    top: 36%;
+    left: 10%;
+  }
+
+  .car-image {
+    width: 65px;
+    height: auto;
+    max-width: auto;
+  }
+}
